@@ -217,6 +217,31 @@ footer{padding-top:34px!important;padding-bottom:34px!important}
   .hero-onepiece img{border-radius:20px}
 }
 
+
+/* === HERO ASPECT-RATIO FIX === */
+.hero-onepiece{padding:10px 20px 20px!important;min-height:0!important}
+.hero-onepiece-wrap{
+  max-width:1380px!important;
+  margin:0 auto!important;
+  overflow:visible!important;
+  border-radius:30px!important;
+  max-height:none!important;
+}
+.hero-onepiece img{
+  display:block!important;
+  width:100%!important;
+  height:auto!important;
+  max-height:none!important;
+  object-fit:contain!important;
+  aspect-ratio:auto!important;
+  border-radius:30px!important;
+}
+@media(max-width:760px){
+  .hero-onepiece{padding:8px 8px 18px!important}
+  .hero-onepiece-wrap{width:100%!important;margin:0 auto!important}
+  .hero-onepiece img{width:100%!important;height:auto!important;object-fit:contain!important}
+}
+
 </style></head><body>
 <header><div class="w nav"><div class="brand">LINE運用サポート</div><a class="btn" href="#contact">無料LINE診断</a></div></header>
 <main><section class="hero hero-onepiece" aria-label="LINE運用サポート">
