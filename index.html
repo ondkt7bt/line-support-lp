@@ -175,6 +175,32 @@ footer{padding-top:34px!important;padding-bottom:34px!important}
 @media(max-width:1000px){.hero .hero-grid{grid-template-columns:1fr 1fr!important;gap:30px!important}.hero h1{font-size:46px!important}.hero-photo{height:460px!important}.hero-diagnosis{left:16px;right:16px;width:auto}}
 @media(max-width:760px){.hero{padding:52px 0 62px!important}.hero .hero-grid{grid-template-columns:1fr!important}.hero h1{font-size:40px!important}.hero .lead br{display:none}.hero-photo{height:auto!important;aspect-ratio:4/3}.hero-diagnosis{position:relative;left:auto;right:auto;bottom:auto;width:auto;margin:-44px 14px 0}.hero-badges span{font-size:12px}}
 
+
+/* === HERO HEADING FIT PATCH: first view only === */
+@media (min-width: 981px){
+  .hero .grid{
+    grid-template-columns:minmax(0, 52%) minmax(0, 48%) !important;
+    gap:44px !important;
+  }
+  .hero .grid > *{min-width:0 !important;}
+  .hero h1{
+    font-size:clamp(48px,4.05vw,64px) !important;
+    line-height:1.10 !important;
+    letter-spacing:-0.045em !important;
+    max-width:100% !important;
+    overflow-wrap:normal !important;
+    word-break:keep-all !important;
+  }
+  .hero h1 span{white-space:nowrap !important;}
+  .hero p{
+    max-width:660px !important;
+    line-height:1.9 !important;
+  }
+}
+@media (min-width:981px) and (max-width:1180px){
+  .hero h1{font-size:48px !important;}
+}
+
 </style></head><body>
 <header><div class="w nav"><div class="brand">LINE運用サポート</div><a class="btn" href="#contact">無料LINE診断</a></div></header>
 <main><section class="hero"><div class="w hero-grid"><div class="hero-copy"><div class="eye">店舗・事業者向け LINE運用サポート</div><h1>LINE公式アカウントの<br><span>運用をまるっとサポート</span></h1><p class="lead">何を配信すればいいか分からない。忙しくて手が回らない。<br>そんなお悩みを、企画から分析・改善までまとめて支援します。</p><div class="hero-badges"><span>初期費用0円</span><span>最低契約期間なし</span><span>月額7,000円〜（税別）</span></div><a class="btn" href="#contact">無料LINE診断を申し込む</a></div><div class="hero-visual"><img class="hero-photo" src="hero.png" alt="LINE運用をサポートする店舗スタッフ"><div class="hero-diagnosis"><h3>無料LINE診断でチェック</h3><div class="check"><b>01</b>配信内容・頻度</div><div class="check"><b>02</b>リッチメニュー</div><div class="check"><b>03</b>クーポン・販促</div><div class="check"><b>04</b>友だち追加の導線</div><div class="check"><b>05</b>改善ポイント</div></div></div></div></section>
