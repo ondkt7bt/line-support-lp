@@ -154,9 +154,30 @@ footer{padding-top:34px!important;padding-bottom:34px!important}
 .hero-visual{position:relative}
 .hero-visual:after{content:"";position:absolute;inset:auto 18px 18px auto;width:110px;height:110px;border-radius:50%;background:rgba(255,255,255,.88);box-shadow:0 8px 24px rgba(0,0,0,.08);pointer-events:none}
 @media(max-width:760px){.hero-photo{min-height:300px;aspect-ratio:4/3}.hero-visual:after{display:none}}
+
+/* HERO FIX 2026-09-26 */
+.hero{padding:78px 0 88px!important;min-height:0!important;overflow:hidden}
+.hero .hero-grid{display:grid!important;grid-template-columns:minmax(0,1.03fr) minmax(480px,.97fr)!important;gap:54px!important;align-items:center!important}
+.hero-copy{min-width:0}
+.hero h1{font-size:clamp(48px,4.55vw,70px)!important;line-height:1.08!important;letter-spacing:-.045em!important;margin:16px 0 22px!important;word-break:keep-all!important}
+.hero h1 span{color:#f26722}
+.hero .lead{font-size:17px!important;line-height:1.9!important;margin-bottom:20px!important}
+.hero-badges{display:flex;flex-wrap:wrap;gap:9px;margin:0 0 24px}
+.hero-badges span{display:inline-flex;align-items:center;padding:8px 13px;border-radius:999px;background:#fff;border:1px solid #ead9c7;font-size:13px;font-weight:700;color:#34383b}
+.hero-visual{position:relative!important;min-width:0}
+.hero-photo{display:block!important;width:100%!important;height:510px!important;min-height:0!important;object-fit:cover!important;object-position:center!important;border-radius:28px!important;box-shadow:0 22px 55px rgba(32,37,42,.14)!important}
+.hero-visual:after{display:none!important;content:none!important}
+.hero-diagnosis{position:absolute;left:-34px;bottom:24px;width:310px;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border:1px solid #ead9c7;border-radius:20px;padding:20px 22px;box-shadow:0 16px 40px rgba(31,35,38,.14)}
+.hero-diagnosis h3{font-size:16px;margin:0 0 10px}
+.hero-diagnosis .check{padding:8px 0!important;font-size:13px!important;border-bottom:1px solid #eee!important}
+.hero-diagnosis .check:last-child{border-bottom:0!important}
+.hero-diagnosis .check b{color:#f26722;margin-right:8px}
+@media(max-width:1000px){.hero .hero-grid{grid-template-columns:1fr 1fr!important;gap:30px!important}.hero h1{font-size:46px!important}.hero-photo{height:460px!important}.hero-diagnosis{left:16px;right:16px;width:auto}}
+@media(max-width:760px){.hero{padding:52px 0 62px!important}.hero .hero-grid{grid-template-columns:1fr!important}.hero h1{font-size:40px!important}.hero .lead br{display:none}.hero-photo{height:auto!important;aspect-ratio:4/3}.hero-diagnosis{position:relative;left:auto;right:auto;bottom:auto;width:auto;margin:-44px 14px 0}.hero-badges span{font-size:12px}}
+
 </style></head><body>
 <header><div class="w nav"><div class="brand">LINE運用サポート</div><a class="btn" href="#contact">無料LINE診断</a></div></header>
-<main><section class="hero"><div class="w grid"><div><div class="eye">店舗・事業者向け LINE運用サポート</div><h1>LINE公式アカウントの<br><span>運用をまるっと</span><br>サポート</h1><p class="lead">何を配信すればいいか分からない。忙しくて手が回らない。<br>そんなお悩みを、企画から分析・改善までまとめて支援します。</p><a class="btn" href="#contact">無料LINE診断を申し込む</a></div><div class="box"><h3>無料LINE診断でチェック</h3><div class="check"><b>01</b>友だち追加後の導線</div><div class="check"><b>02</b>配信内容・配信頻度</div><div class="check"><b>03</b>リッチメニューの設計</div><div class="check"><b>04</b>クーポン・再来店施策</div><div class="check"><b>05</b>改善できそうなポイント</div></div><div class="hero-visual"><img class="hero-photo" src="hero.png" alt="LINE運用をサポートする店舗スタッフ"></div></div></section>
+<main><section class="hero"><div class="w hero-grid"><div class="hero-copy"><div class="eye">店舗・事業者向け LINE運用サポート</div><h1>LINE公式アカウントの<br><span>運用をまるっとサポート</span></h1><p class="lead">何を配信すればいいか分からない。忙しくて手が回らない。<br>そんなお悩みを、企画から分析・改善までまとめて支援します。</p><div class="hero-badges"><span>初期費用0円</span><span>最低契約期間なし</span><span>月額7,000円〜（税別）</span></div><a class="btn" href="#contact">無料LINE診断を申し込む</a></div><div class="hero-visual"><img class="hero-photo" src="hero.png" alt="LINE運用をサポートする店舗スタッフ"><div class="hero-diagnosis"><h3>無料LINE診断でチェック</h3><div class="check"><b>01</b>配信内容・頻度</div><div class="check"><b>02</b>リッチメニュー</div><div class="check"><b>03</b>クーポン・販促</div><div class="check"><b>04</b>友だち追加の導線</div><div class="check"><b>05</b>改善ポイント</div></div></div></div></section>
 <section class="alt"><div class="w"><div class="title"><h2>こんなお悩み、ありませんか？</h2><p>日々のLINE運用を、もっと手軽に、続けやすく。</p></div><div class="problems"><div class="problem">作ったものの放置している</div><div class="problem">配信内容を考えるのが大変</div><div class="problem">友だちはいるのに売上につながらない</div><div class="problem">クーポンの効果が分からない</div><div class="problem">リッチメニューを活用できていない</div><div class="problem">社内に運用を任せられる人がいない</div></div></div></section>
 <section><div class="w"><div class="title"><h2>企画から改善まで、まとめて対応</h2></div><div class="cards"><div class="card"><b>01</b><h3>配信企画・文章作成</h3><p>季節やキャンペーンに合わせて配信テーマと文章を作成。</p></div><div class="card"><b>02</b><h3>リッチメニュー・導線</h3><p>お客様が迷わず目的の情報へ進める導線を整理。</p></div><div class="card"><b>03</b><h3>クーポン・販促企画</h3><p>再来店や購入につながる施策を一緒に企画。</p></div><div class="card"><b>04</b><h3>友だち獲得施策</h3><p>店頭・Web・SNSからLINEにつなげる導線を改善。</p></div><div class="card"><b>05</b><h3>継続運用サポート</h3><p>告知内容に合わせたクリエイティブをサポート。</p></div><div class="card"><b>06</b><h3>分析・改善提案</h3><p>配信結果を確認して次回の改善につなげます。</p></div></div></div></section>
 <section class="alt"><div class="w"><div class="title"><h2>まずは「無料LINE診断」から</h2><p>現在のLINEを5つのポイントでチェック。契約前提ではありません。</p></div><div class="cards">
