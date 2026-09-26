@@ -1,0 +1,185 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>店舗・事業者向け LINE運用サポート｜無料LINE診断</title>
+<style>
+:root{--g:#ef6c20;--d:#20252a;--m:#6d675f;--bg:#fff8ed;--b:#eadfce}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif;color:var(--d);line-height:1.75}a{text-decoration:none;color:inherit}.w{width:min(1080px,92%);margin:auto}.nav{height:68px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:900}.btn{display:inline-block;background:var(--g);color:#fff;font-weight:900;border-radius:999px;padding:14px 24px}.hero{background:linear-gradient(135deg,#fff,#fff7ea);padding:72px 0}.grid{display:grid;grid-template-columns:1.2fr .8fr;gap:44px;align-items:center}.eye{color:#d95b16;font-weight:900}.hero h1{font-size:clamp(34px,5vw,62px);line-height:1.2;margin:10px 0 20px}.hero h1 span{color:var(--g)}.lead{font-size:18px;color:var(--m)}.box{background:#fff;border:1px solid var(--b);border-radius:26px;padding:26px;box-shadow:0 20px 50px #6b4d2515}.check{padding:11px 0;border-bottom:1px solid #edf3ef}.check b{color:var(--g);margin-right:8px}section{padding:76px 0}.alt{background:var(--bg)}.title{text-align:center;margin-bottom:38px}.title h2{font-size:clamp(27px,4vw,40px);line-height:1.35;margin:0 0 10px}.title p,.card p,.faq p{color:var(--m)}.problems{display:grid;grid-template-columns:1fr 1fr;gap:13px}.problem,.card{background:#fff;border:1px solid var(--b);border-radius:17px;padding:20px}.problem:before{content:"✓";color:var(--g);font-weight:900;margin-right:9px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card b{color:var(--g);font-size:13px}.card h3{margin:5px 0}.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.step{background:#fff1dc;border-radius:17px;padding:22px}.step b{display:block;color:var(--g);font-size:13px}.price{max-width:680px;margin:auto;border:2px solid var(--g);border-radius:22px;padding:32px;text-align:center}.price strong{display:block;font-size:30px}.offer{background:var(--d);color:#fff;border-radius:28px;padding:44px;text-align:center}
+.formbox{max-width:760px;margin:28px auto 0;text-align:left;background:#fff;color:var(--d);padding:28px;border-radius:20px}
+.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.field{margin-bottom:16px}.field label{display:block;font-weight:800;margin-bottom:6px}
+.field input,.field select,.field textarea{width:100%;padding:13px 14px;border:1px solid var(--b);border-radius:10px;font:inherit;background:#fff}
+.field textarea{min-height:120px;resize:vertical}.full{grid-column:1/-1}
+.submit{border:0;cursor:pointer;width:100%;font-size:16px}
+.formnote{font-size:12px;color:var(--m);text-align:center;margin:10px 0 0}
+@media(max-width:760px){.priceplans{grid-template-columns:1fr!important}.formgrid{grid-template-columns:1fr}.full{grid-column:auto}}.offer p{color:#f2dfcf}.faq{max-width:800px;margin:auto}.faq details{padding:17px 3px;border-bottom:1px solid var(--b)}.faq summary{font-weight:900;cursor:pointer}footer{text-align:center;padding:28px;color:#7b877f;font-size:13px}.sticky{display:none}
+@media(max-width:760px){.priceplans{grid-template-columns:1fr!important}.nav .btn{display:none}.grid,.cards,.flow,.problems{grid-template-columns:1fr}.hero{padding:46px 0}section{padding:76px 0}.sticky{display:block;position:fixed;left:14px;right:14px;bottom:14px;background:var(--g);color:#fff;text-align:center;padding:14px;border-radius:999px;font-weight:900;box-shadow:0 8px 30px #0002}footer{padding-bottom:85px}}
+
+.profile-section{padding:105px 0;background:#fff8ed}
+.profile-wrap{max-width:1100px;margin:auto;padding:0 22px;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.profile-copy h2{font-size:42px;margin:8px 0 18px;color:#20252a}
+.profile-copy h3{font-size:24px;line-height:1.55;margin:0 0 18px}
+.profile-copy p{font-size:16px;line-height:1.9;color:#50565d}
+.profile-photo img{width:100%;display:block;border-radius:28px;box-shadow:0 18px 50px rgba(32,37,42,.14)}
+@media(max-width:760px){.profile-wrap{grid-template-columns:1fr;gap:28px}.profile-copy h2{font-size:34px}.profile-photo{order:-1}}
+
+/* FINAL POLISH */
+.profile-wrap{max-width:1180px;grid-template-columns:minmax(0,1.05fr) minmax(420px,.95fr);gap:64px}
+.profile-copy h3{font-size:22px;line-height:1.55;letter-spacing:.01em}
+.profile-copy h3 .keep{white-space:nowrap}
+.profile-copy p{max-width:650px}
+.profile-photo img{aspect-ratio:16/10;object-fit:cover;object-position:center}
+@media(max-width:980px){.profile-wrap{grid-template-columns:1fr 1fr;gap:34px}.profile-copy h3{font-size:20px}}
+@media(max-width:760px){.profile-section{padding:72px 0}.profile-wrap{grid-template-columns:1fr;gap:30px;padding:0 20px}.profile-copy h2{font-size:32px}.profile-copy h3{font-size:21px}.profile-copy h3 .keep{white-space:normal}.profile-copy p{font-size:15px;line-height:1.85}.profile-photo img{aspect-ratio:4/3}}
+
+/* FULL-PAGE FINAL TUNING */
+section{padding-top:96px!important;padding-bottom:96px!important}
+.title{margin-bottom:38px!important}
+.cards{gap:18px!important}
+.card{padding:26px!important}
+.profile-section{padding-top:110px!important;padding-bottom:110px!important}
+.profile-wrap{max-width:1160px!important}
+.profile-copy h3{max-width:560px;font-size:21px!important;line-height:1.6!important}
+.profile-copy p{font-size:16px!important;line-height:1.95!important}
+.profile-photo img{min-height:330px;object-fit:cover}
+.flow-final{background:#fff}
+.flow-final .title{text-align:center}
+.flow-final-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.flow-final-card{background:#fff8ed;border:1px solid #eadfce;border-radius:18px;padding:26px 22px;min-height:190px}
+.flow-final-card b{display:inline-flex;width:38px;height:38px;border-radius:50%;align-items:center;justify-content:center;background:#ef6c20;color:#fff;margin-bottom:14px}
+.flow-final-card h3{font-size:18px;margin:0 0 10px}
+.flow-final-card p{font-size:14px;line-height:1.75;color:#6d675f;margin:0}
+#faq{padding-top:92px!important;padding-bottom:92px!important}
+#contact{padding-top:100px!important;padding-bottom:100px!important}
+@media(max-width:760px){
+ section{padding-top:68px!important;padding-bottom:68px!important}
+ .flow-final-grid{grid-template-columns:1fr}
+ .flow-final-card{min-height:auto}
+ .profile-section{padding-top:72px!important;padding-bottom:72px!important}
+ .profile-photo img{min-height:0}
+}
+
+
+/* ===== RELEASE FINISH ===== */
+:root{--release-max:1180px}
+body{font-size:16px;line-height:1.75}
+.w,.wrap{max-width:var(--release-max)!important;padding-left:28px!important;padding-right:28px!important}
+header .w{max-width:var(--release-max)!important}
+section{padding-top:104px!important;padding-bottom:104px!important}
+.hero{padding-top:112px!important;padding-bottom:112px!important;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;width:440px;height:440px;border-radius:50%;right:-130px;top:-120px;background:radial-gradient(circle,rgba(239,108,32,.13),rgba(239,108,32,0) 68%);pointer-events:none}
+.hero h1{font-size:clamp(46px,5vw,70px)!important;line-height:1.08!important;letter-spacing:-.035em!important;max-width:760px}
+.hero p{font-size:17px!important;line-height:1.9!important;max-width:650px}
+.eye{font-size:14px!important;letter-spacing:.06em}
+.btn{padding:14px 24px!important;border-radius:999px!important}
+.title h2,.section-title h2{font-size:clamp(32px,3.1vw,44px)!important;line-height:1.25!important;letter-spacing:-.02em}
+.title p,.section-title p{font-size:16px!important;line-height:1.8!important}
+.cards{gap:22px!important}
+.card{padding:30px!important;border-radius:18px!important}
+.card h3{font-size:20px!important;line-height:1.5!important}
+.card p{font-size:15px!important;line-height:1.8!important}
+.problems{gap:14px!important}
+.priceplans{max-width:900px!important;margin-left:auto!important;margin-right:auto!important;gap:28px!important}
+.priceplans .card{padding:36px!important}
+.priceplans h3{font-size:22px!important}
+.profile-section{padding-top:110px!important;padding-bottom:110px!important}
+.profile-wrap{max-width:var(--release-max)!important;padding:0 28px!important;grid-template-columns:minmax(0,1fr) minmax(460px,.95fr)!important;gap:72px!important}
+.profile-copy h2{font-size:44px!important;line-height:1.2!important}
+.profile-copy h3{font-size:25px!important;line-height:1.55!important;margin-bottom:22px!important}
+.profile-copy p{font-size:16px!important;line-height:2!important}
+.profile-photo img{width:100%!important;aspect-ratio:16/10!important;object-fit:cover!important;border-radius:26px!important;box-shadow:0 20px 50px rgba(32,37,42,.14)!important}
+.flow-final .w{max-width:var(--release-max)!important}
+.flow-final-grid{gap:18px!important}
+.flow-final-card{padding:28px 24px!important;border-radius:18px!important;min-height:205px!important}
+.flow-final-card h3{font-size:18px!important;line-height:1.5!important}
+#faq{padding-top:100px!important;padding-bottom:100px!important}
+#contact{padding-top:110px!important;padding-bottom:110px!important}
+.formbox{max-width:820px!important;padding:38px!important;border-radius:24px!important}
+.field input,.field select,.field textarea{font-size:16px!important;padding:15px 16px!important}
+footer{padding-top:34px!important;padding-bottom:34px!important}
+@media(max-width:980px){
+ .profile-wrap{grid-template-columns:1fr 1fr!important;gap:38px!important}
+ .hero h1{font-size:48px!important}
+}
+@media(max-width:760px){
+ .w,.wrap{padding-left:20px!important;padding-right:20px!important}
+ section{padding-top:72px!important;padding-bottom:72px!important}
+ .hero{padding-top:78px!important;padding-bottom:78px!important}
+ .hero h1{font-size:40px!important;line-height:1.12!important}
+ .hero p{font-size:15px!important}
+ .title h2,.section-title h2{font-size:30px!important}
+ .card{padding:22px!important}
+ .priceplans{gap:18px!important}
+ .priceplans .card{padding:26px!important}
+ .profile-wrap{grid-template-columns:1fr!important;padding:0 20px!important;gap:30px!important}
+ .profile-copy h2{font-size:34px!important}
+ .profile-copy h3{font-size:21px!important}
+ .profile-photo{order:-1}
+ .profile-photo img{aspect-ratio:4/3!important}
+ .flow-final-grid{grid-template-columns:1fr!important}
+ .flow-final-card{min-height:auto!important}
+ .formbox{padding:24px!important}
+}
+
+</style></head><body>
+<header><div class="w nav"><div class="brand">LINE運用サポート</div><a class="btn" href="#contact">無料LINE診断</a></div></header>
+<main><section class="hero"><div class="w grid"><div><div class="eye">店舗・事業者向け LINE運用サポート</div><h1>LINE公式アカウントの<br><span>運用をまるっと</span><br>サポート</h1><p class="lead">何を配信すればいいか分からない。忙しくて手が回らない。<br>そんなお悩みを、企画から分析・改善までまとめて支援します。</p><a class="btn" href="#contact">無料LINE診断を申し込む</a></div><div class="box"><h3>無料LINE診断でチェック</h3><div class="check"><b>01</b>友だち追加後の導線</div><div class="check"><b>02</b>配信内容・配信頻度</div><div class="check"><b>03</b>リッチメニューの設計</div><div class="check"><b>04</b>クーポン・再来店施策</div><div class="check"><b>05</b>改善できそうなポイント</div></div></div></section>
+<section class="alt"><div class="w"><div class="title"><h2>こんなお悩み、ありませんか？</h2><p>日々のLINE運用を、もっと手軽に、続けやすく。</p></div><div class="problems"><div class="problem">作ったものの放置している</div><div class="problem">配信内容を考えるのが大変</div><div class="problem">友だちはいるのに売上につながらない</div><div class="problem">クーポンの効果が分からない</div><div class="problem">リッチメニューを活用できていない</div><div class="problem">社内に運用を任せられる人がいない</div></div></div></section>
+<section><div class="w"><div class="title"><h2>企画から改善まで、まとめて対応</h2></div><div class="cards"><div class="card"><b>01</b><h3>配信企画・文章作成</h3><p>季節やキャンペーンに合わせて配信テーマと文章を作成。</p></div><div class="card"><b>02</b><h3>リッチメニュー・導線</h3><p>お客様が迷わず目的の情報へ進める導線を整理。</p></div><div class="card"><b>03</b><h3>クーポン・販促企画</h3><p>再来店や購入につながる施策を一緒に企画。</p></div><div class="card"><b>04</b><h3>友だち獲得施策</h3><p>店頭・Web・SNSからLINEにつなげる導線を改善。</p></div><div class="card"><b>05</b><h3>継続運用サポート</h3><p>告知内容に合わせたクリエイティブをサポート。</p></div><div class="card"><b>06</b><h3>分析・改善提案</h3><p>配信結果を確認して次回の改善につなげます。</p></div></div></div></section>
+<section class="alt"><div class="w"><div class="title"><h2>まずは「無料LINE診断」から</h2><p>現在のLINEを5つのポイントでチェック。契約前提ではありません。</p></div><div class="cards">
+<div class="card"><b>01</b><h3>配信内容・頻度</h3><p>内容や配信ペースを確認。</p></div><div class="card"><b>02</b><h3>リッチメニュー</h3><p>使いやすい導線か確認。</p></div><div class="card"><b>03</b><h3>クーポン・販促</h3><p>再来店・購入施策を確認。</p></div><div class="card"><b>04</b><h3>友だち追加導線</h3><p>店頭・Web・SNSからの導線を確認。</p></div><div class="card"><b>05</b><h3>売上・再来店への導線</h3><p>成果につなげる改善余地を確認。</p></div><div class="card" style="background:#fff1dc"><b>診断後</b><h3>改善ポイントを3つご案内</h3><p>優先して改善したいポイントを整理してお伝えします。</p></div>
+</div></div></section>
+<section class="alt"><div class="wrap"><div class="section-title"><div class="mini">RESULTS</div><h2>運用実績</h2><p>実際のLINE運用で、こんな成果につながっています。</p></div><div class="cards"><div class="card" style="text-align:center"><b>薬局で</b><h3 style="font-size:36px;color:var(--orange)">友だち数 2倍</h3><p>LINEでの接点を増やし、継続的な情報発信につなげました。</p></div><div class="card" style="text-align:center"><b>月5回配信で</b><h3 style="font-size:36px;color:var(--orange)">開封率 90％以上</h3><p>配信内容とタイミングを工夫し、高い開封率を継続。</p></div><div class="card" style="text-align:center"><b>店頭購入で</b><h3 style="font-size:36px;color:var(--orange)">売上 1.5倍</h3><p>LINE施策から店頭購入につなげ、売上向上につながりました。</p></div></div></div></section><section id="price"><div class="w">
+<div class="title">
+<h2>始めやすい、シンプルな2つの料金プラン</h2>
+<p>企画・文章作成・分析・改善提案まで、どちらのプランにも含まれています。</p>
+</div>
+<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:18px;max-width:820px;margin:auto" class="priceplans">
+<div class="card">
+<b>LIGHT</b>
+<h3>ライト</h3>
+<p><strong style="font-size:30px;color:var(--d)">月額7,000円</strong> <small>（税別）</small></p>
+<p><strong>LINE配信 月4回</strong><br>
+配信文章作成<br>
+配信企画<br>
+クーポン・販促企画<br>
+簡易分析<br>
+改善提案</p>
+</div>
+<div class="card" style="border:2px solid var(--g)">
+<b>STANDARD</b>
+<h3>スタンダード</h3>
+<p><strong style="font-size:30px;color:var(--d)">月額14,000円</strong> <small>（税別）</small></p>
+<p><strong>LINE配信 月8回</strong><br>
+配信文章作成<br>
+配信企画<br>
+クーポン・販促企画<br>
+簡易分析<br>
+改善提案</p>
+</div>
+</div>
+<p style="text-align:center;margin-top:24px;font-weight:800">初期費用 0円　｜　最低契約期間なし</p>
+</div></section>
+<section class="profile-section" id="about"><div class="profile-wrap"><div class="profile-copy"><div class="mini">ABOUT ME</div><h2>私について</h2><h3>小さなお店の集客を、<br>LINEでサポートします。</h3><p>LINE公式アカウントの企画・文章作成・分析・改善まで、無理なく続けられる運用を大切にしています。</p><p>「何を配信したらいいか分からない」「運用する時間がない」といったお悩みに寄り添い、お店ごとの課題に合わせて丁寧にサポートします。まずはお気軽にご相談ください。</p></div><div class="profile-photo"><img src="profile.png" alt="LINE運用サポート担当者"></div></div></section>
+<section class="flow-final" id="flow"><div class="w"><div class="title"><h2>ご利用の流れ</h2><p>お申し込みから運用開始まで、最短1〜2週間でスタートできます。</p></div><div class="flow-final-grid"><div class="flow-final-card"><b>01</b><h3>無料診断に申し込み</h3><p>フォームからお気軽にお申し込みください。</p></div><div class="flow-final-card"><b>02</b><h3>ヒアリング・診断</h3><p>現在のLINE運用状況を確認し、課題を整理します。</p></div><div class="flow-final-card"><b>03</b><h3>ご提案・ご契約</h3><p>改善ポイントと配信プランをご提案します。</p></div><div class="flow-final-card"><b>04</b><h3>運用開始</h3><p>企画・文章作成・分析・改善まで継続してサポートします。</p></div></div></div></section>
+<section class="alt"><div class="w"><div class="title"><h2>よくあるご質問</h2></div><div class="faq"><details><summary>まだLINE公式アカウントを作っていません。</summary><p>開設前からご相談いただけます。</p></details><details><summary>一部の作業だけお願いできますか？</summary><p>はい。必要な範囲をご相談ください。</p></details><details><summary>小さなお店でも相談できますか？</summary><p>はい。規模や運用状況に合わせてご提案します。</p></details><details><summary>無料診断を受けたら契約が必要ですか？</summary><p>いいえ。必要性を感じていただいた場合のみご検討ください。</p></details></div></div></section>
+<section style="background:linear-gradient(135deg,#fff3df,#fffaf3)"><div class="w"><div class="title"><h2>小さなお店でも、無理なく続けられるLINE運用を。</h2><p>初期費用0円・最低契約期間なし。まずは現在のLINEを無料で診断します。</p></div><div style="text-align:center"><a class="btn" href="#contact">無料LINE診断を申し込む</a></div></div></section>
+
+
+<section id="contact"><div class="w"><div class="offer">
+<h2>無料LINE診断を申し込む</h2>
+<p>現在のLINE公式アカウントを確認し、改善できそうなポイントを整理します。<br>診断後の契約は必須ではありません。</p>
+<div class="formbox">
+<form action="https://formsubmit.co/ondkt7bt@gmail.com" method="POST">
+<input type="hidden" name="_subject" value="【LP】無料LINE診断のお申し込み">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_template" value="table">
+<div class="formgrid">
+<div class="field"><label>店舗・会社名 *</label><input type="text" name="店舗・会社名" required></div>
+<div class="field"><label>担当者名 *</label><input type="text" name="担当者名" required></div>
+<div class="field"><label>メールアドレス *</label><input type="email" name="email" required></div>
+<div class="field"><label>業種 *</label><input type="text" name="業種" placeholder="例：美容室、飲食店、不動産" required></div>
+<div class="field"><label>LINEの友だち数</label><select name="LINEの友だち数"><option value="">選択してください</option><option>まだ開設していない</option><option>〜100人</option><option>101〜500人</option><option>501〜1,000人</option><option>1,001人以上</option></select></div>
+<div class="field"><label>現在のお悩み</label><select name="現在のお悩み"><option value="">選択してください</option><option>何を配信すればいいか分からない</option><option>運用する時間がない</option><option>友だちが増えない</option><option>売上・再来店につながらない</option><option>リッチメニューを活用できていない</option><option>その他</option></select></div>
+<div class="field full"><label>LINE公式アカウントURL・ID（任意）</label><input type="text" name="LINE公式アカウントURL・ID" placeholder="分かる場合のみご入力ください"></div>
+<div class="field full"><label>相談内容（任意）</label><textarea name="相談内容" placeholder="現在困っていることや、相談したい内容をご記入ください"></textarea></div>
+<div class="full"><button class="btn submit" type="submit">無料LINE診断を申し込む</button><p class="formnote">入力内容は無料LINE診断のご連絡に使用します。</p></div>
+</div></form>
+</div></div></div></section></main>
+<footer>© LINE運用サポート</footer><a class="sticky" href="#contact">無料LINE診断を相談する</a></body></html>
